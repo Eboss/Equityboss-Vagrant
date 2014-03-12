@@ -1,8 +1,25 @@
 name "appserver"
 description "All configurations pertaining to the appserver."
-run_list "recipe[equityboss::appserver_packages]",
-         "recipe[equityboss::nginx]"
+# run_list "role[base]",
+#          "recipe[postgresql]",
+#          "recipe[equityboss::appserver_packages]"
 
-#env_run_lists "production" => ["recipe[nginx]"], "staging" => ["recipe[nginx]"], "_default" => ["recipe[nginx]"]
+env_run_lists "production" => ["role[base]",
+                              "recipe[postgresql]",
+                              "recipe[equityboss::appserver_packages]",
+                              "recipe[nginx]"],
+
+              "staging" => ["role[base]",
+                            "recipe[postgresql]",
+                            "recipe[equityboss::appserver_packages]",
+                            "recipe[nginx]"],
+
+              "dev" => ["role[base]",
+                        "recipe[postgresql]",
+                        "recipe[equityboss::appserver_packages]"],
+
+              "_default" => ["role[base]",
+                        "recipe[postgresql]",
+                        "recipe[equityboss::appserver_packages]"]
 #default_attributes "node" => { "attribute" => [ "value", "value", "etc." ] }
 #override_attributes "node" => { "attribute" => [ "value", "value", "etc." ] }

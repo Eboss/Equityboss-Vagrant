@@ -68,7 +68,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      chef.data_bags_path = "chef/data_bags"
 
      chef.environments_path="chef/environments"
-     #chef.environment='dev'
+     chef.environment='dev'
 
      chef.add_role "appserver"
      chef.add_role "dbserver"
