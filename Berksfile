@@ -1,6 +1,5 @@
 site :opscode
 
-
 cookbook "apt", "=2.3.9", git: 'git@github.com:opscode-cookbooks/apt.git'
 cookbook "python", "=1.4.7", git: 'git@github.com:poise/python.git'
 cookbook "nginx", "=2.4.3", git: 'git@github.com:opscode-cookbooks/nginx.git'

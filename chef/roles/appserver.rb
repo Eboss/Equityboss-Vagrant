@@ -16,10 +16,12 @@ env_run_lists "production" => ["role[base]",
 
               "dev" => ["role[base]",
                         "recipe[postgresql]",
-                        "recipe[equityboss::appserver_packages]"],
+                        "recipe[equityboss::appserver_packages]",
+                        "recipe[equityboss::dev_setup]"],
 
               "_default" => ["role[base]",
                         "recipe[postgresql]",
-                        "recipe[equityboss::appserver_packages]"]
+                        "recipe[equityboss::appserver_packages]",
+                        "recipe[equityboss::dev_setup]"]
 #default_attributes "node" => { "attribute" => [ "value", "value", "etc." ] }
 #override_attributes "node" => { "attribute" => [ "value", "value", "etc." ] }
