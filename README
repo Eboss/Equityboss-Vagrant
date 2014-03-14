@@ -1,0 +1,13 @@
+##Instructions to setup your vagrant environment##
+
+You need to install the following dependencies.
+VirtualBox
+Vagrant(https://www.vagrantup.com/downloads)
+vagrant plugin install vagrant-berkshelf
+gem install chef
+gem install knife-solo
+gem install chef-solo-search
+
+Go to vagrant root folder and do
+vagrant up --provision
+vagrant ssh and go to work 
