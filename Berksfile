@@ -9,3 +9,4 @@ cookbook "chef-solo-search", "=0.5.1", git: 'git@github.com:edelight/chef-solo-s
 #TODO: change this to a repo
 cookbook "equityboss", "=0.1.0", path: '/Users/jambunathanramanathan/work/apps/cookbook-eq' 
 #cookbook "equityboss", "=0.1.0", git: 'git@github.com:Eboss/Equityboss-Cookbook.git'
+

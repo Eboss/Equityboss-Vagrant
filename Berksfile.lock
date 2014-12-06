@@ -15,15 +15,15 @@
       "git": "git@github.com:opscode-cookbooks/nginx.git",
       "ref": "fc572f0eab471d9a0c609d2b415ec89c6a5ced50"
     },
-    "mongodb": {
-      "locked_version": "0.15.0",
-      "git": "git@github.com:edelight/chef-mongodb.git",
-      "ref": "16d697608a5c44349ff5dffc564cff119707cac5"
-    },
     "postgresql": {
       "locked_version": "3.3.4",
       "git": "git@github.com:hw-cookbooks/postgresql.git",
       "ref": "5800238828b443725442fe510ec4f5308ed9ce8b"
+    },
+    "mongodb": {
+      "locked_version": "0.15.0",
+      "git": "git@github.com:edelight/chef-mongodb.git",
+      "ref": "16d697608a5c44349ff5dffc564cff119707cac5"
     },
     "chef-solo-search": {
       "locked_version": "0.5.1",
@@ -59,3 +59,4 @@
     }
   }
 }
+
